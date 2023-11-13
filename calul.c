@@ -30,17 +30,15 @@ int solve(int x, int y, int n, int movei, int **sol)
                 return 1;
             else
                 sol[nextX][nextY] = -1; // in caz ca nu avem o solutie viitoare din aceasta pozitie
-                                        // marcam pozitie de parca nici nu am fost aici si continuam mai departe din apelul precedent
+                       // marcam pozitie de parca nici nu am fost aici si continuam mai departe din apelul precedent
         }
     }
-
     return 0;
 }
 
 void afis(int n, int **sol){
     // Afisează soluția găsită
-    for (int i = 0; i < n; i++)
-    {   
+    for (int i = 0; i < n; i++){   
         printf("|");
         for (int j = 0; j < n; j++)
             printf(" %3d |", sol[i][j]);
@@ -49,8 +47,10 @@ void afis(int n, int **sol){
 }
 
 
+
 int main(){
-    int n;
+    int n,x,y;
+    printf("Dimensiunea table de sah N*N:");
     scanf("%d",&n);
     
     //alocare dinamica de memorie
@@ -64,10 +64,17 @@ int main(){
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
             sol[i][j] = -1;
-    sol[0][0] = 0;
 
-    // Începeți călătoria călătorului de la (0, 0)
-    if (solve(0, 0, n, 1, sol) == 0)
+    do
+    {
+        printf("Pozitia de start (x y):");
+        scanf("%d%d", &x, &y);
+    } while (!valid(x, y, n, sol));
+    printf("flag\n");
+    sol[x][y] = 0;
+
+    // Începeți călătoria călătorului de la (x, y)
+    if (solve(x, y, n, 1, sol) == 0)
     {
         printf("Nu există soluție.\n");
         return 0;
