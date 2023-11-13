@@ -50,9 +50,10 @@ void afis(int n, int **sol){
 
 
 int main(){
-    int n;
+    int n,x,y;
     printf("Dimensiunea table de sah N*N:");
     scanf("%d",&n);
+    
     
     //alocare dinamica de memorie
     int **sol=(int**)malloc(sizeof(int*)*n);
@@ -65,10 +66,17 @@ int main(){
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
             sol[i][j] = -1;
-    sol[0][0] = 0;
+
+    do
+    {
+        printf("Pozitia de start (x y): ");
+        scanf("%d %d", &x, &y);
+    } while (!valid(x, y, n, sol));
+
+    sol[x][y] = 0;
 
     // Începeți călătoria călătorului de la (0, 0)
-    if (solve(0, 0, n, 1, sol) == 0)
+    if (solve(x, y, n, 1, sol) == 0)
     {
         printf("Nu există soluție.\n");
         return 0;
