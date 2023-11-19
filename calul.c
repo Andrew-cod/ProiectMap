@@ -141,6 +141,7 @@ int main()
         free(sol[i]);
     }
     free(sol);
+    getchar();
 
     return 0;
 }
