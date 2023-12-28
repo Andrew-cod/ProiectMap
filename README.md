@@ -2,6 +2,7 @@
 
 ## Descriere
 
+
 Problema "Knight's Tour" constă în găsirea unui traseu închis pe o tablă de șah, astfel încât calul să treacă printr-o singură dată prin fiecare celulă a tablei, respectând regulile de mișcare ale calului în șah.
 
 ## Structura Codului
