@@ -3,7 +3,33 @@
 ## Descriere
 
 
-Problema "Knight's Tour" constă în găsirea unui traseu închis pe o tablă de șah, astfel încât calul să treacă printr-o singură dată prin fiecare celulă a tablei, respectând regulile de mișcare ale calului în șah.
+Problema "Knight's Tour" constă în găsirea unui traseu închis pe o tablă de șah astfel încât un cal să treacă prin fiecare celulă a tablei o singură dată, respectând regulile de mișcare ale calului în șah.
+
+Mișcarea unui cal în șah este specificată prin deplasarea sa în formă de "L". Adică, calul se deplasează doi pași într-o direcție (orizontală sau verticală) și apoi un pas perpendicular la direcția inițială. Aceasta poate fi descrisă prin diferite combinații de deplasări pe axele x și y..
+
+
+## Intrare și Ieșire
+
+- Utilizatorul este solicitat să introducă dimensiunea tablei de șah (n) și poziția de start a calului (x, y).
+- Soluția sau mesajul de eșec este afișat la ieșire.
+
+## Exemplu de Utilizare
+
+```plaintext
+## Exemplu de Utilizare
+
+```plaintext
+(Tasteaza 0 pentru a iesi din program:
+Dimensiunea table de sah N*N:8
+Pozitia de start (x y): 0 0
+|   0 |  59 |  38 |  33 |  30 |  17 |   8 |  63 |
+|  37 |  34 |  31 |  60 |   9 |  62 |  29 |  16 |
+|  58 |   1 |  36 |  39 |  32 |  27 |  18 |   7 |
+|  35 |  48 |  41 |  26 |  61 |  10 |  15 |  28 |
+|  42 |  57 |   2 |  49 |  40 |  23 |   6 |  19 |
+|  47 |  50 |  45 |  54 |  25 |  20 |  11 |  14 |
+|  56 |  43 |  52 |   3 |  22 |  13 |  24 |   5 |
+|  51 |  46 |  55 |  44 |  53 |   4 |  21 |  12 |
 
 ## Structura Codului
 
@@ -22,11 +48,6 @@ Problema "Knight's Tour" constă în găsirea unui traseu închis pe o tablă de
 - Inițializează tablă cu -1.
 - Verifică dacă poziția de start este validă, altfel cere reintroducerea acesteia.
 - Aplică algoritmul de rezolvare a problemei și afișează soluția sau un mesaj de eșec.
-
-## Intrare și Ieșire
-
-- Utilizatorul este solicitat să introducă dimensiunea tablei de șah (n) și poziția de start a calului (x, y).
-- Soluția sau mesajul de eșec este afișat la ieșire.
 
 ## Flux de Execuție
 
@@ -49,17 +70,4 @@ Problema "Knight's Tour" constă în găsirea unui traseu închis pe o tablă de
 6. **Eliberare Memorie**
    - Eliberarea memoriei alocate dinamic.
 
-## Exemplu de Utilizare
 
-```plaintext
-(Tasteaza 0 pentru a iesi din program:
-Dimensiunea table de sah N*N: 8
-Pozitia de start (x y): 0 0
-|   0 |  59 |   2 |  49 |   4 |  41 |   6 |  51 |
-|  33 |   8 |  57 |  22 |  63 |  36 |  11 |  40 |
-|   1 |  58 |  23 |  50 |   3 |  42 |   5 |  52 |
-|  32 |  35 |  10 |  37 |  56 |  21 |  62 |  39 |
-|   9 |  24 |  55 |  18 |  61 |  48 |  13 |  26 |
-|  34 |  31 |  38 |  53 |  20 |  19 |  12 |  43 |
-|  25 |  54 |  17 |  60 |  47 |  14 |  27 |  44 |
-|  30 |  15 |  46 |  29 |  16 |  45 |  28 |  7  |
