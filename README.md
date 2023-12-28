@@ -96,7 +96,7 @@ Pentru a rula un container bazat pe imagine:
 ```plaintext
 docker run my-c-program
 ```
-Asigură-te că ai Docker instalat și configurat pe sistem pentru ca aceste comenzi să funcționeze.
+**Asigură-te că ai Docker instalat și configurat pe sistem pentru ca aceste comenzi să funcționeze.**
 
 
 
