@@ -13,7 +13,7 @@ Mișcarea unui cal în șah este specificată prin deplasarea sa în formă de "
 - Soluția sau mesajul de eșec este afișat la ieșire.
 
 ## Exemplu de Utilizare
-
+### Există soluție
 ```plaintext
 (Tasteaza 0 pentru a iesi din program:
 Dimensiunea table de sah N*N: 8
@@ -26,6 +26,18 @@ Pozitia de start (x y): 0 0
 |  34 |  31 |  38 |  53 |  20 |  19 |  12 |  43 |
 |  25 |  54 |  17 |  60 |  47 |  14 |  27 |  44 |
 |  30 |  15 |  46 |  29 |  16 |  45 |  28 |  7  |
+```
+### Nu există soluție
+```plaintext
+Dimensiunea table de sah N*N:2
+Pozitia de start (x y): 1 1
+Nu există soluție.
+Incercati cu alte date de intrare
+```
+### Ieșire
+```plaintext
+(Tasteaza 0 pentru a iesi din program:
+Dimensiunea table de sah N*N:0
 ```
 ## Structura Codului
 
