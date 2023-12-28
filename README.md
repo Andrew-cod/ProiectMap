@@ -80,4 +80,24 @@ Dimensiunea table de sah N*N:0
 6. **Eliberare Memorie**
    - Eliberarea memoriei alocate dinamic.
 
+# Documentație Dockerfile
+Acest Dockerfile este conceput pentru a crea o imagine Docker pentru compilarea și rularea unui program în limbajul C (calul.c) folosind GCC (GNU Compiler Collection) într-un mediu minimal.
+
+## Construirea și Rularea Imaginii Docker
+
+###
+Pentru a construi imaginea Docker, navighează în directorul care conține Dockerfile-ul și execută următoarea comandă:
+
+```plaintext
+docker build -t my-c-program .
+```
+###
+Pentru a rula un container bazat pe imagine:
+```plaintext
+docker run my-c-program
+```
+Asigură-te că ai Docker instalat și configurat pe sistem pentru ca aceste comenzi să funcționeze.
+
+
+
 
